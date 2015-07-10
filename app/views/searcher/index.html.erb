@@ -1,0 +1,22 @@
+<h1>Find Something Awesome</h1>
+<h3>Across Town or Across the Country</h3> 
+
+<%= form_tag("/search", method: "get") do %>
+
+	<ul>
+		<li>
+			<%= label_tag(:city, 'City : ') %>&nbsp;  
+			<%= text_field_tag(:city) %> 
+		</li>
+		<li>
+			<%= label_tag(:city, 'Tags :') %>&nbsp;  
+			<%= text_field_tag(:tags) %> 
+		</li>
+
+		<li>
+			<%= submit_tag("Search") %> 
+		</li> 
+
+	</ul>
+
+<% end %> 

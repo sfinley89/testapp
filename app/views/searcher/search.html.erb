@@ -1,0 +1,20 @@
+
+<h1> Search Results </h1>
+
+City : <%=params[:city]%> <br/> 
+Tags : <%=params[:tags]%>  
+
+<hr/>
+
+<% @results.each do |b| %>
+
+<img src = '<%=b[0][:img]%>' alt = '<%=b[0][:name]%>' />
+<ul>
+	<li> <%=b[0][:name]%> </li> 
+	<li> <%=b[0][:address]%> </li> 
+	
+</ul>
+
+<hr/>
+
+<%end%> 
