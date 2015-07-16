@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'ticketevolution-ruby', :require => 'ticket_evolution'
 # yelp ingest. 
 gem 'yelp', require: 'yelp'
 
